@@ -1,0 +1,45 @@
+@import "./variables";
+.message {
+    z-index: 20;
+    position: fixed;
+    top: 74%;
+    width: 385px;
+    max-width: 298px;
+    background-color: #dd9191;
+    border-radius: 81px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: 232px;
+    padding: 20px;
+    opacity: 0;
+    &__active {
+        
+        animation: showMessage 4s linear;
+    }
+    @keyframes showMessage {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px);
+        }
+        25% {
+            opacity: 1;
+            transform: translateX(0px);
+
+        }
+        75% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+    }
+    @media (min-width: $md) {
+        max-width: 298px;
+        padding: 24px;
+        
+
+    }
+}

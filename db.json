@@ -1,0 +1,93 @@
+{
+    "data":[
+        {
+            "_id": "614cc3561152fd760f569ee3",
+            "name": "Маргарита",
+            "imgUrl": "img1",
+            "category": "Мясные",
+            "popularity": 10,
+            "price": 399
+        },
+        {
+            "_id": "614cc4041152fd760f569ee5",
+            "name": "Сырная",
+            "imgUrl": "img2",
+            "category": "Вегетарианская",
+            "popularity": 3,
+            "price": 425
+        },
+        {
+            "_id": "614cc4531152fd760f569ee6",
+            "name": "Пепперони фреш",
+            "imgUrl": "img3",
+            "category": "Мясные",
+            "popularity": 9,
+            "price": 499
+        },
+        {
+            "_id": "614cc4861152fd760f569ee7",
+            "name": "Цыпленок барбекю",
+            "imgUrl": "img4",
+            "category": "Гриль",
+            "popularity": 6,
+            "price": 625
+        },
+        {
+            "_id": "614cc4e11152fd760f569ee8",
+            "name": "Нежный лосось",
+            "imgUrl": "img5",
+            "category": "Вегетарианская",
+            "popularity": 4,
+            "price": 600
+        },
+        {
+            "_id": "614cc52b1152fd760f569ee9",
+            "name": "Мексиканская",
+            "imgUrl": "img6",
+            "category": "Острые",
+            "popularity": 7,
+            "price": 525
+        },
+        {
+            "_id": "614cc5d22b8a828b908a68e6",
+            "name": "Карбонара",
+            "imgUrl": "img7",
+            "category": "Мясные",
+            "popularity": 10,
+            "price": 400
+        },
+        {
+            "_id": "614cc6532b8a828b908a68e7",
+            "name": "Ветчина и грибы",
+            "imgUrl": "img8",
+            "category": "Мясные",
+            "popularity": 9,
+            "price": 399
+        },
+        {
+            "_id": "614cc79e2b8a828b908a68e8",
+            "name": "Супермясная",
+            "imgUrl": "img9",
+            "category": "Острые",
+            "popularity": 3,
+            "price": 699
+        },
+        {
+            "_id": "614cc7f92b8a828b908a68e9",
+            "name": "Колбаски Барбекю",
+            "imgUrl": "img10",
+            "category": "Острые",
+            "popularity": 6,
+            "price": 425
+        },
+        {
+            "_id": "614cc8972b8a828b908a68ea",
+            "name": "Песто",
+            "imgUrl": "img11",
+            "category": "Вегетарианская",
+            "popularity": 1,
+            "price": 725
+        }
+    ]
+    
+}

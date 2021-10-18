@@ -1,0 +1,17 @@
+
+.title {
+    font-size: 32px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+.grid {
+    margin: 0 -15px;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    gap: 65px 35px;
+}
+.menu {
+    margin-bottom: 104px;
+}

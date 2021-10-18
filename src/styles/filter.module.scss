@@ -1,0 +1,105 @@
+@import "./variables";
+.filter {
+    margin: 40px 0 30px 0;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: column;
+        @media (min-width: $sm) {
+            flex-direction: row;
+        }
+    }
+    &__sort {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        flex-direction: column;
+        white-space: nowrap;
+        @media (min-width: $sm) {
+            flex-direction: row;
+        }
+        &--active {
+            .filter__arrow {
+                transform: rotate(-180deg);
+            }
+            .filter__choose {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0px, 0px);
+                @media (max-width: $sm) {
+                    transform: translate(42px, 0px);
+                }
+            }
+        }
+    }
+    &__sortBy {
+        display: flex;
+        align-items: center;
+    }
+    &__arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5.62px 5px 0 5px;
+        border-color: #2c2c2c transparent transparent transparent;
+        margin-right: 4px;
+        transition: all 0.3s linear;
+        @media (min-width: $sm) {
+            margin-right: 7px;
+        }
+    }
+    &__text {
+        color: $color-black;
+        margin-right: 8px;
+        letter-spacing: 0.015em;
+    }
+    &__categories {
+        position: relative;
+    }
+    &__category {
+        letter-spacing: 0.015em;
+        font-weight: 400;
+        color: #fe5f1e;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 2px dashed #fe5f1e;
+        }
+    }
+    &__choose {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 38px;
+        right: 0;
+        background: #ffffff;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        min-width: 142px;
+        transition: all 0.3s linear;
+        transform: translate(0px, -30px);
+        z-index: 21;
+        @media (max-width: $sm) {
+            transform: translate(42px, -30px);
+        }
+        &__item {
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.015em;
+            color: #000000;
+            padding: 8px 14px;
+            transition: all 0.3s linear;
+            cursor: pointer;
+            &:hover {
+                color: #fe5f1e;
+                background-color: rgba(254, 95, 30, 0.05);
+            }
+        }
+    }
+}

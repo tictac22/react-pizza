@@ -1,0 +1,20 @@
+.button {
+    padding: 15px;
+    letter-spacing: 0.015em;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+    font-weight: bold;
+    transition: background-color 0.3s linear;
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+    cursor: pointer;
+    &:hover {
+        background-color: #adaaaa;
+    }
+    &__active {
+        background-color: #6e6969;
+    }
+}

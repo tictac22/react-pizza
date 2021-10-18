@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   border: none;
+}
+html,
+body {
+   height: 100%;
+   overflow-x: hidden;
+}
+body {
+   font-family: "Proxima-Nova", "sans-serif";
+   font-weight: bold;
+   font-size: 16px;
+}
+body._lock {
+   overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: normal;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+   margin: 0;
+   padding: 0;
+   font-weight: inherit;
+   font-size: inherit;
+}
+p {
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   font-weight: inherit;
+}
+li {
+   list-style: none;
+}
+input {
+   border: none;
+   outline: none;
+}
+input::-webkit-input-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+textarea:focus::-webkit-input-placeholder {
+   opacity: 0;
+}
+button {
+   border: none;
+   outline: none;
+   background-color: transparent;
+}
+textarea {
+   outline: none;
+   border: none;
+   resize: none;
+}
+address {
+   font-style: normal;
+}
+@font-face {
+   font-family: Proxima-Nova;
+   src: url("/fonts/Proximanova-Extrabold.woff2") format("woff2"),
+      url("/fonts/Proximanova-Extrabold.woff") format("woff");
+   font-weight: 800;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Proxima-Nova;
+   src: url("/fonts/ProximaNova-Regular.woff2") format("woff2"), url("/fonts/ProximaNova-Regular.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Proxima-Nova;
+   src: url("/fonts/Proximanova-Bold.woff2") format("woff2"), url("/fonts/Proximanova-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+.container {
+   max-width: 1195px;
+   padding: 0 15px;
+   margin: 0 auto;
+   position: relative;
+}
+.btn {
+   cursor: pointer;
+   background-color: #fe5f1e;
+   border-radius: 30px;
+   border: 1px solid #fe5f1e;
+   display: flex;
+   color: #fff;
+   font-weight: bold;
+   align-items: center;
+   transition: background-color 0.3s linear;
+}

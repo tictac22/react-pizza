@@ -1,0 +1,123 @@
+@import "./variables";
+.header {
+    padding: 49px 0px 40px 0;
+    border-bottom: 1px solid #f7f7f7;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        color: black;
+    }
+}
+.logo-header {
+    display: inline-grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 6px;
+    @media (min-width: $sm) {
+        column-gap: 17px;
+    }
+    &__logo {
+        color: black;
+        @media (min-width: $sm) {
+            grid-row: span 2;
+        }
+        text-align: center;
+        align-self: center;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 24px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #181818;
+        @media (max-width: $sm) {
+            align-self: center;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        color: #7b7b7b;
+        display: none;
+        @media (min-width: $sm) {
+            display: block;
+        }
+    }
+}
+.btn{
+    display: flex;
+    align-items: center;
+    background: #FE5F1E;
+    border-radius: 30px;
+    color: #fff;
+    padding: 15px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border: 1px solid #FE5F1E;
+    &:hover {
+        background-color: #fff;
+        color: #fe5f1e;
+       
+    }
+    &:hover .btn__line:before {
+        background-color: #fe5f1e;
+    }
+    &:hover .btn__img svg {
+        fill: #fe5f1e;
+    }
+    &:hover .btn__img svg path {
+        stroke: #fe5f1e;
+    }
+    &__price {
+        margin-right: 4px;
+        position: relative;
+        display: none;
+        @media (min-width: $sm) {
+            display: block;
+        }
+    }
+    &__currency {
+        display: none;
+        @media (min-width: $sm) {
+            display: block;
+        }
+    }
+    &__line {
+        margin: 0 10px;
+        width: 1px;
+        height: 25px;
+        position: relative;
+        display: none;
+        @media (min-width: $sm) {
+            display: block;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            transition: background-color 0.3s linear;
+            background-color: rgba(255, 255, 255, 0.25);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__shopping {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__count {
+        font-weight: bold;
+    }
+}
