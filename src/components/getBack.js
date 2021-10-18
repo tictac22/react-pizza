@@ -15,11 +15,11 @@ export const GetBack = () => {
             <div className={styles.img}>
                 <img alt="empty" src="/pizzasimg/svg/empty.svg"/>
             </div>
-            <div className={styles.btn}>
-                <Link to="/">
+            <Link to="/" className={styles.btn}>
+               
                     Вернуться назад
-                </Link>
-            </div>
+               
+            </Link>
         </div>
     )
 }
