@@ -4,8 +4,6 @@ import { addPiza,increment,showMessage } from "../redux/pizzaSlicer";
 
 import styles from "../styles/piza.module.scss";
 
-
-
 export const Piza = memo(({name,price,img,id}) => {
     const dispatch = useDispatch();
     const [count, setCount] = useState(0);

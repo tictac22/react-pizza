@@ -19,6 +19,7 @@ export const Home = () => {
       
       try {
         setLoading(true)
+        
         const res = await fetch(`/data?_sort=${_sort}&_order=${_order}${category === "Все" ? "" : `&category=${category}`}`);
         const sortedData = await res.json();
         setLoading(false)
