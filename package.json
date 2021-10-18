@@ -6,12 +6,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "node json-server",
     "json-server": "json-server --watch db.json --port 5000",
     "app": "concurrently \"yarn start\" \"yarn json-server\"",
     "eject": "react-scripts eject"
   },
-  "proxy":"http://localhost:5000",
+  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -35,6 +34,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "json-server": "^0.17.0",
     "lodash.isequal": "^4.5.0",
     "lodash.remove": "^4.7.0",
     "node-sass": "4.14.1",
@@ -48,7 +48,6 @@
   },
   "devDependencies": {
     "concurrently": "^6.3.0",
-    "json-server": "^0.17.0",
     "nodemon": "^2.0.13"
   }
 }
