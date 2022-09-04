@@ -7,8 +7,8 @@ export const TotalBtn = () => {
 	return (
 		<Link to="/cart">
 			<div className={styles.btn}>
-				<p className={styles.btn__price}>{totalPrice}</p>
-				<p className={styles.btn__currency}>₽</p>
+				<p className={styles.btn__price}>{totalPrice.toFixed(2)}</p>
+				<p className={styles.btn__currency}>$</p>
 				<div className={styles.btn__line}></div>
 				<div className={styles.btn__shopping}>
 					<div className={styles.btn__img}>

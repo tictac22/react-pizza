@@ -9,7 +9,7 @@ export const CartTotal = () => {
 				<p>{state.totalCount}</p>
 			</div>
 			<div className={styles.totalPrice}>
-				Order price:<p>{state.totalPrice} ₽</p>
+				Order price:<p>{state.totalPrice.toFixed(2)} $</p>
 			</div>
 		</div>
 	)

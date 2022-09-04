@@ -47,7 +47,7 @@ export const CartItem = memo((props) => {
 					<img alt="plus" src="/pizzasimg/svg/plus.svg" />
 				</div>
 			</div>
-			<p className={styles.cartItem__price}>{props.price * props.amount} ₽ </p>
+			<p className={styles.cartItem__price}>{props.price * props.amount} $ </p>
 			<div onClick={deleteItem} className={styles.cartItem__delete}>
 				<img alt="delete" src="/pizzasimg/svg/delete.svg" />
 			</div>

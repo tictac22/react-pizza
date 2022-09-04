@@ -88,9 +88,7 @@ export const Piza = ({ name, price, img, id }) => {
 				</div>
 				<div className={styles.price}>
 					<div className={styles.price__money}>
-						<p className={styles.text}>
-							from {price} {"\u20BD"}{" "}
-						</p>
+						<p className={styles.text}>from {price} $</p>
 					</div>
 					<div onClick={addPicaToCart} className={`${styles["btn"]} btn`}>
 						<div className={styles.plus}>
