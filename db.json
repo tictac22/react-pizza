@@ -6,7 +6,7 @@
 			"imgUrl": "img1",
 			"category": "Meats",
 			"popularity": 10,
-			"price": 399
+			"price": 6.99
 		},
 		{
 			"_id": "614cc4041152fd760f569ee5",
@@ -14,7 +14,7 @@
 			"imgUrl": "img2",
 			"category": "Vegetarian",
 			"popularity": 3,
-			"price": 425
+			"price": 7
 		},
 		{
 			"_id": "614cc4531152fd760f569ee6",
@@ -22,7 +22,7 @@
 			"imgUrl": "img3",
 			"category": "Meats",
 			"popularity": 9,
-			"price": 499
+			"price": 8
 		},
 		{
 			"_id": "614cc4861152fd760f569ee7",
@@ -30,7 +30,7 @@
 			"imgUrl": "img4",
 			"category": "Grill",
 			"popularity": 6,
-			"price": 625
+			"price": 10
 		},
 		{
 			"_id": "614cc4e11152fd760f569ee8",
@@ -38,7 +38,7 @@
 			"imgUrl": "img5",
 			"category": "Vegetarian",
 			"popularity": 4,
-			"price": 600
+			"price": 10
 		},
 		{
 			"_id": "614cc52b1152fd760f569ee9",
@@ -46,7 +46,7 @@
 			"imgUrl": "img6",
 			"category": "Hot",
 			"popularity": 7,
-			"price": 525
+			"price": 8.99
 		},
 		{
 			"_id": "614cc5d22b8a828b908a68e6",
@@ -54,7 +54,7 @@
 			"imgUrl": "img7",
 			"category": "Meats",
 			"popularity": 10,
-			"price": 400
+			"price": 8.99
 		},
 		{
 			"_id": "614cc6532b8a828b908a68e7",
@@ -62,7 +62,7 @@
 			"imgUrl": "img8",
 			"category": "Meats",
 			"popularity": 9,
-			"price": 399
+			"price": 6.99
 		},
 		{
 			"_id": "614cc79e2b8a828b908a68e8",
@@ -70,7 +70,7 @@
 			"imgUrl": "img9",
 			"category": "Hot",
 			"popularity": 3,
-			"price": 699
+			"price": 6.99
 		},
 		{
 			"_id": "614cc7f92b8a828b908a68e9",
@@ -78,7 +78,7 @@
 			"imgUrl": "img10",
 			"category": "Hot",
 			"popularity": 6,
-			"price": 425
+			"price": 7
 		},
 		{
 			"_id": "614cc8972b8a828b908a68ea",
@@ -86,7 +86,7 @@
 			"imgUrl": "img11",
 			"category": "Vegetarian",
 			"popularity": 1,
-			"price": 725
+			"price": 12
 		}
 	]
 }
