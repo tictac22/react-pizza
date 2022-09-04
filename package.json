@@ -1,0 +1,34 @@
+{
+	"name": "react-app-pizza",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "node server.js",
+		"server": "node json-server",
+		"json-server": "json-server --watch db.json --port 5000",
+		"app": "concurrently \"yarn start\" \"yarn json-server\"",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"json-server": "^0.17.0"
+	}
+}
