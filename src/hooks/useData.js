@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 
+const API_URL = "https://react-pizza.onrender.com"
 export const UseData = () => {
 	const [isLoading, setLoading] = useState(false)
 	const [isError, setError] = useState(false)
@@ -13,7 +14,9 @@ export const UseData = () => {
 				setLoading(true)
 
 				const res = await fetch(
-					`/data?_sort=${_sort}&_order=${_order}${category === "All" ? "" : `&category=${category}`}`
+					`${API_URL}/data?_sort=${_sort}&_order=${_order}${
+						category === "All" ? "" : `&category=${category}`
+					}`
 				)
 				const sortedData = await res.json()
 				setLoading(false)
