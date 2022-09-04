@@ -16,3 +16,4 @@ export const GetBack = () => {
 		</div>
 	)
 }
+    

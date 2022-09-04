@@ -48,6 +48,54 @@
 	letter-spacing: 0.01em;
 	margin-top: 40px;
 	justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	@media (min-width: $sm) {
+		flex-direction: row;
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+		&Text {
+			font-weight: bold;
+			letter-spacing: 0.01em;
+			margin-left: 17px;
+			font-size: 20px;
+			@media (min-width: $md) {
+				font-size: 32px;
+			}
+		}
+	}
+	&__trash {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		@media (max-width: $sm +1) {
+			margin-top: 10px;
+		}
+		&Text {
+			color: #b6b6b6;
+			font-weight: 400;
+			font-size: 16px;
+			margin-left: 7px;
+		}
+	}
+	&__items {
+		margin-top: 30px;
+	}
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.01em;
+	margin-top: 40px;
+	justify-content: space-between;
+	@media (max-width: $sm +1) {
+		flex-direction: column;
+	}
 }
 .amountPizzas,
 .totalPrice {
@@ -65,12 +113,58 @@
 }
 .totalPrice p {
 	color: #fe5f1e;
-}
-.order {
+	.totalPrice {
+		@media (max-width: $sm +1) {
+			margin-top: 10px;
+		}
+		& p {
+			color: #fe5f1e;
+		}
+	}
+
+	.order {
+		display: flex;
+		align-items: center;
+		margin-top: 40px;
+		justify-content: space-between;
+		&__back {
+			display: flex;
+			cursor: pointer;
+			align-items: center;
+			font-size: 16px;
+			color: #cacaca;
+			padding: 18px 37px;
+			border-radius: 30px;
+			border: 1px solid #d3d3d3;
+			transition: all 0.3s linear;
+			&:hover {
+				border: 1px solid #979494;
+				box-shadow: 3px 1px 9px 3px #929292;
+			}
+		}
+		&__img {
+			margin-right: 14px;
+			display: flex;
+		}
+
+		&__pay {
+			background: #fe5f1e;
+			border-radius: 30px;
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 16px;
+			padding: 18px 43px;
+			cursor: pointer;
+		}
+	}
 	display: flex;
 	align-items: center;
 	margin-top: 40px;
 	justify-content: space-between;
+	@media (max-width: $sm +1) {
+		flex-direction: column;
+		margin-top: 20px;
+	}
 	&__back {
 		display: flex;
 		cursor: pointer;
@@ -97,7 +191,9 @@
 		color: #ffffff;
 		font-weight: bold;
 		font-size: 16px;
-		padding: 18px 43px;
-		cursor: pointer;
+		padding: 18px 49px;
+		@media (max-width: $sm +1) {
+			margin-top: 20px;
+		}
 	}
 }
