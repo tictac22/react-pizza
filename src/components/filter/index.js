@@ -69,3 +69,5 @@ const Filter = () => {
 	)
 }
 export default memo(Filter)
+
+//All", "Meats", "Vegetarian", "Grill", "Hot"]}

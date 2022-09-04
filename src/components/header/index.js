@@ -15,7 +15,7 @@ const Header = ({ hideButton }) => {
 								<img alt="logo" src="/logo.png" />
 							</div>
 							<h1 className={styles["logo-header__title"]}>REACT PIZZA</h1>
-							<p className={styles["logo-header__text"]}>самая вкусная пицца во вселенной</p>
+							<p className={styles["logo-header__text"]}>The most delicious pizza in the universe</p>
 						</div>
 					</Link>
 					{hideButton && <TotalBtn />}
