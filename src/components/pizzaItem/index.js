@@ -7,8 +7,7 @@ import styles from "../../styles/piza.module.scss"
 import { Amount } from "./amount"
 export const Piza = ({ name, price, img, id }) => {
 	const dispatch = useDispatch()
-	const [count, setCount] = useState(0)
-	const pizzaTypes = ["тонкое", "традиционное"]
+	const pizzaTypes = ["thin", "traditional"]
 	const pizzaSizes = ["26 см.", "30 см.", "40 см."]
 
 	const [avaibleTypes, setAvaibleTypes] = useState(pizzaTypes[null])
@@ -19,18 +18,17 @@ export const Piza = ({ name, price, img, id }) => {
 			dispatch(showMessage(true))
 			return
 		}
-		setCount(count + 1)
-		dispatch(
-			addPiza({
-				img,
-				id,
-				name,
-				type: pizzaTypes[avaibleTypes],
-				size: pizzaSizes[avaibleSizes],
-				price,
-				showMessage: false,
-			})
-		)
+		const pizza = {
+			img,
+			id,
+			name,
+			type: pizzaTypes[avaibleTypes],
+			size: pizzaSizes[avaibleSizes],
+			price,
+			showMessage: false,
+		}
+		console.log(pizza)
+		dispatch(addPiza({ ...pizza }))
 		dispatch(increment())
 	}
 	return (
@@ -91,7 +89,7 @@ export const Piza = ({ name, price, img, id }) => {
 				<div className={styles.price}>
 					<div className={styles.price__money}>
 						<p className={styles.text}>
-							от {price} {"\u20BD"}{" "}
+							from {price} {"\u20BD"}{" "}
 						</p>
 					</div>
 					<div onClick={addPicaToCart} className={`${styles["btn"]} btn`}>
@@ -109,7 +107,7 @@ export const Piza = ({ name, price, img, id }) => {
 								/>
 							</svg>
 						</div>
-						<p className={styles.btn__text}>Добавить</p>
+						<p className={styles.btn__text}>Add</p>
 						<Amount id={id} />
 					</div>
 				</div>

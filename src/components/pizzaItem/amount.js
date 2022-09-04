@@ -3,6 +3,7 @@ import styles from "../../styles/piza.module.scss"
 
 export const Amount = ({ id }) => {
 	const amount = useSelector((state) => state.pizza.pizzas)
+
 	const reducedAmount = () => {
 		if (!amount[id]) return 0
 		return amount[id]?.reduce((prev, current) => {

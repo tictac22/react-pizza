@@ -10,12 +10,12 @@ export const HomeWrapper = () => {
 		<section className={styles.menu}>
 			<div className="container">
 				{isLoading ? (
-					"Загрузка данных..."
+					"Loading data..."
 				) : isError ? (
-					"ошибка на стороне сервера, попробуйте ещё раз"
+					"Server side error, please try again"
 				) : (
 					<>
-						<h2 className={styles.title}>Все пиццы</h2>
+						<h2 className={styles.title}>All pizzas</h2>
 						<Message />
 						<div className={styles.grid}>
 							{data &&

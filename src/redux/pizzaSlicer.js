@@ -44,9 +44,10 @@ const counterSlice = createSlice({
 		addPiza: (state, { payload }) => {
 			const { id, name, type, size, img, price, showMessage } = payload
 			if (!state.pizzas[id]) {
+				console.log(id)
 				state.pizzas[id] = []
 			}
-			const check = state.pizzas[id].every((item) => {
+			const check = state.pizzas[id].every((item, index) => {
 				const obj1 = {
 					name,
 					type,
@@ -62,7 +63,8 @@ const counterSlice = createSlice({
 					price: item.price,
 				}
 				if (isEqual(obj1, currentObj)) {
-					item.amount++
+					console.log(state.pizzas[id][index])
+					state.pizzas[id][index].amount++
 					return false
 				}
 				return true
@@ -77,8 +79,8 @@ const counterSlice = createSlice({
 					amount: 1,
 				})
 			}
-			window.localStorage.setItem("pizzaSlicer", JSON.stringify(state.pizzas))
 			state.showMessage = showMessage
+			window.localStorage.setItem("pizzaSlicer", JSON.stringify(state.pizzas))
 		},
 		deleteCartItem: (state, { payload }) => {
 			remove(
@@ -122,7 +124,7 @@ function getStateFromLocalStorage() {
 	const pizzas = JSON.parse(window.localStorage.getItem("pizzaSlicer")) || null
 	if (pizzas === null) {
 		return {
-			pizzas: [],
+			pizzas: {},
 			totalCount: 0,
 			totalPrice: 0,
 		}

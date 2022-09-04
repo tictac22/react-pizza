@@ -4,7 +4,6 @@ import styles from "../../styles/header.module.scss"
 
 export const TotalBtn = () => {
 	const { totalPrice, totalCount } = useSelector((state) => state.pizza)
-
 	return (
 		<Link to="/cart">
 			<div className={styles.btn}>

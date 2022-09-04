@@ -13,7 +13,7 @@ export const UseData = () => {
 				setLoading(true)
 
 				const res = await fetch(
-					`/data?_sort=${_sort}&_order=${_order}${category === "Все" ? "" : `&category=${category}`}`
+					`/data?_sort=${_sort}&_order=${_order}${category === "All" ? "" : `&category=${category}`}`
 				)
 				const sortedData = await res.json()
 				setLoading(false)

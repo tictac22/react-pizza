@@ -6,7 +6,7 @@ export const Home = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Меню</title>
+				<title>Menu</title>
 			</Helmet>
 			<main>
 				<Filter />

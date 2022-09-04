@@ -15,7 +15,7 @@ export const Cart = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Корзина</title>
+				<title>Cart</title>
 			</Helmet>
 			<div className={styles.cartContainer}>
 				<div className={styles.container}>
@@ -26,11 +26,11 @@ export const Cart = () => {
 							<div className={styles.cart}>
 								<div className={styles.cart__title}>
 									<img alt="shoppingCart" src="/pizzasimg/svg/shoppingCart.svg" />
-									<h2 className={styles.cart__titleText}>Корзина</h2>
+									<h2 className={styles.cart__titleText}>Cart</h2>
 								</div>
 								<div onClick={deleteTrash} className={styles.cart__trash}>
 									<img alt="trash" src="/pizzasimg/svg/trash.svg" />
-									<p className={styles.cart__trashText}>Очистить корзину</p>
+									<p className={styles.cart__trashText}>Clear cart</p>
 								</div>
 							</div>
 							<CartWrapper />
@@ -41,12 +41,10 @@ export const Cart = () => {
 										<div className={styles.order__img}>
 											<img alt="arrow" src="/pizzasimg/svg/arrow.svg" />
 										</div>
-										<p className={styles.order__backText}>Вернуться назад</p>
+										<p className={styles.order__backText}>Go back</p>
 									</div>
 								</Link>
-								<div className={styles.order__pay}>
-									<a href="*">Оплатить сейчас</a>
-								</div>
+								<button className={styles.order__pay}>Buy now</button>
 							</div>
 						</>
 					)}

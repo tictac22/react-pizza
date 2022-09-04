@@ -5,7 +5,7 @@ const initialState = {
 		_sort: "popularity",
 		_order: "desc",
 	},
-	category: "Все",
+	category: "All",
 }
 const sortSlicer = createSlice({
 	name: "sort",

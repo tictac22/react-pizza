@@ -5,11 +5,11 @@ export const CartTotal = () => {
 	return (
 		<div className={styles.info}>
 			<div className={styles.amountPizzas}>
-				Всего пицц:
-				<p>{state.totalCount} шт.</p>
+				Total pizzas:
+				<p>{state.totalCount}</p>
 			</div>
 			<div className={styles.totalPrice}>
-				Сумма заказа:<p>{state.totalPrice} ₽</p>
+				Order price:<p>{state.totalPrice} ₽</p>
 			</div>
 		</div>
 	)
